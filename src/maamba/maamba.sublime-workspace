@@ -1,0 +1,933 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"about"
+			],
+			[
+				"con",
+				"contact_view\tfunction"
+			],
+			[
+				"home",
+				"home_view\tfunction"
+			],
+			[
+				"H",
+				"HttpResponse"
+			],
+			[
+				"Htt",
+				"HttpResponse\tclass"
+			],
+			[
+				"max",
+				"max_digits\tparam"
+			],
+			[
+				"inpu",
+				"inputTable\tparam"
+			],
+			[
+				"sum",
+				"sum"
+			],
+			[
+				"i",
+				"i\tstatement"
+			],
+			[
+				"log",
+				"logHandler\tstatement"
+			],
+			[
+				"water",
+				"water_sanitation"
+			],
+			[
+				"getApp",
+				"getAppLink\tfunction"
+			],
+			[
+				"get",
+				"getHashtag\tfunction"
+			],
+			[
+				"json",
+				"json2\tstatement"
+			],
+			[
+				"in",
+				"insert\tfunction"
+			],
+			[
+				"asser",
+				"assertEqual\tfunction"
+			],
+			[
+				"t",
+				"TestCase\timport"
+			],
+			[
+				"fl",
+				"flask_cache"
+			],
+			[
+				"mem",
+				"memfeed"
+			],
+			[
+				"url",
+				"urllib2\tmodule"
+			],
+			[
+				"getMar",
+				"getMarqueeFeed\tfunction"
+			],
+			[
+				"exec",
+				"execmem\tstatement"
+			],
+			[
+				"feed",
+				"feed_list\tstatement"
+			],
+			[
+				"fee",
+				"feed_list"
+			],
+			[
+				"chap",
+				"chap_apply\tstatement"
+			],
+			[
+				"getMa",
+				"getMarqueeLink\tfunction"
+			],
+			[
+				"for",
+				"for\tFor Loop"
+			],
+			[
+				"methodolo",
+				"Methodology"
+			],
+			[
+				"banner",
+				"banner_home"
+			],
+			[
+				"h",
+				"h1\tTag"
+			],
+			[
+				"b",
+				"background-image"
+			],
+			[
+				"co",
+				"connect"
+			],
+			[
+				"Table",
+				"Table1\tclass"
+			],
+			[
+				"my",
+				"mysql\tstatement"
+			],
+			[
+				"flask",
+				"flaskext"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"First",
+				"first_name"
+			],
+			[
+				"fir",
+				"first_name"
+			],
+			[
+				"Pass",
+				"PasswordField"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"unic",
+				"unicodecsv\tmodule"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"product",
+				"product-1"
+			],
+			[
+				"Y",
+				"y_test"
+			],
+			[
+				"X",
+				"X_test"
+			],
+			[
+				"pre",
+				"predict"
+			],
+			[
+				"y",
+				"y_train"
+			],
+			[
+				"cla",
+				"classifier"
+			],
+			[
+				"X_trai",
+				"X_train_s"
+			],
+			[
+				"X_tr",
+				"X_train_s"
+			],
+			[
+				"sign",
+				"signup_diff\tstatement"
+			],
+			[
+				"las",
+				"last_diff\tstatement"
+			],
+			[
+				"ac",
+				"activethresh\tstatement"
+			],
+			[
+				"to",
+				"to_csv"
+			],
+			[
+				"data",
+				"data2\tstatement"
+			],
+			[
+				"avg",
+				"avg_surge\tstatement"
+			],
+			[
+				"av",
+				"avg_rating_by_driver\tstatement"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"sec",
+				"section\tTag"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"com",
+				"common_likes\tstatement"
+			],
+			[
+				"fac",
+				"facebook_id\tstatement"
+			],
+			[
+				"cnt",
+				"cntCommonLikes\tfunction"
+			],
+			[
+				"is",
+				"isCommonLike\tfunction"
+			],
+			[
+				"user",
+				"userLikeLst\tparam"
+			],
+			[
+				"page",
+				"page_id\tparam"
+			],
+			[
+				"social",
+				"social_data"
+			],
+			[
+				"eth",
+				"ethnicity_data"
+			],
+			[
+				"dat",
+				"datarr"
+			],
+			[
+				"colu",
+				"column_names"
+			],
+			[
+				"extr",
+				"extra-expanded"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"pr",
+				"projectrishi"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/Anurag/Documents/maamba/src/pages/views.py",
+			"settings":
+			{
+				"buffer_size": 194,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Anurag/Documents/maamba/src/templates/skeleton.html",
+			"settings":
+			{
+				"buffer_size": 1883,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "settings.py",
+			"settings":
+			{
+				"buffer_size": 3187,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Anurag/Documents/maamba/src/templates/vendor_application.html",
+			"settings":
+			{
+				"buffer_size": 1943,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Virtualenv/Python + Virtualenv.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Virtualenv/Python + Virtualenv.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Virtualenv/Python + Virtualenv.sublime-build",
+					""
+				],
+				[
+					"Packages/User/rishi-atlas.sublime-build",
+					""
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Virtualenv/Python + Virtualenv.sublime-build",
+					""
+				],
+				[
+					"Packages/User/rishi-atlas.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 93.0,
+		"last_filter": "preyy",
+		"selected_items":
+		[
+			[
+				"preyy",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"JSON",
+				"Set Syntax: JSON"
+			],
+			[
+				"beau",
+				"Beautify::Beautify File"
+			],
+			[
+				"mini",
+				"Minify::Minify File"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"minify",
+				"Minify::User File Settings"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 418.0
+	},
+	"console":
+	{
+		"height": 53.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Anurag/Documents/maamba",
+		"/Users/Anurag/Documents/maamba/src",
+		"/Users/Anurag/Documents/maamba/src/maamba",
+		"/Users/Anurag/Documents/maamba/src/static",
+		"/Users/Anurag/Documents/maamba/src/templates"
+	],
+	"file_history":
+	[
+		"/Users/Anurag/Documents/maamba/src/templates/vendor_application.html",
+		"/Users/Anurag/Documents/maamba/src/maamba/settings.py",
+		"/Users/Anurag/Documents/trydjango/src/templates/home.html",
+		"/Users/Anurag/Documents/maamba/src/maamba/urls.py",
+		"/Users/Anurag/Documents/trydjango/src/trydjango/settings.py",
+		"/Users/Anurag/Documents/trydjango/src/products/models.py",
+		"/Users/Anurag/Documents/trydjango/src/products/admin.py",
+		"/Users/Anurag/Documents/anurags_personal_web/runtime.txt",
+		"/Users/Anurag/Documents/anurags_personal_web/templates/skeleton.html",
+		"/Users/Anurag/Documents/anurags_personal_web/static/css/style.css",
+		"/Users/Anurag/Documents/projectnic/lib/gscrape.py",
+		"/Users/Anurag/Desktop/test.py",
+		"/Users/Anurag/Documents/projectnic/templates/chapters.html",
+		"/Users/Anurag/Documents/projectnic/templates/about.html",
+		"/Users/Anurag/Documents/projectnic/templates/skeleton.html",
+		"/Users/Anurag/Documents/rishi-natweb/.gitignore",
+		"/Users/Anurag/Documents/rishi-natweb/runtime.txt",
+		"/Users/Anurag/Documents/projectnic/templates/index.html",
+		"/Users/Anurag/Documents/projectnic/app.py",
+		"/Users/Anurag/Documents/projectnic/templates/donate.html",
+		"/Users/Anurag/Documents/projectnic/templates/error.html",
+		"/Users/Anurag/Documents/projectnic/runtime.txt",
+		"/Users/Anurag/.credentials/sheets.googleapis.com-python-quickstart.json",
+		"/Users/Anurag/Documents/rishi-atlas/sheets.googleapis.com-python-quickstart.json.json",
+		"/Users/Anurag/Desktop/help.py",
+		"/Users/Anurag/Documents/udacity/p5-fraud/__init__.py",
+		"/Users/Anurag/Documents/projectnic/log/app.log",
+		"/Users/Anurag/Documents/projectnic/static/css/style.css",
+		"/Users/Anurag/Documents/rishi-natweb/templates/skeleton.html",
+		"/Users/Anurag/Documents/rishi-natweb/templates/about.html",
+		"/Users/Anurag/Documents/rishi-natweb/templates/chapters.html",
+		"/Users/Anurag/Documents/rishi-natweb/app.py",
+		"/Users/Anurag/Documents/rishi-natweb/templates/index.html",
+		"/Users/Anurag/Documents/rishi-natweb/LICENSE",
+		"/Users/Anurag/Documents/rishi-natweb/tests/test_gscape.py",
+		"/Users/Anurag/Documents/rishi-natweb/lib/gscrape.py",
+		"/Users/Anurag/Documents/rishi-natweb/templates/donate.html",
+		"/Users/Anurag/Documents/rishi-natweb/templates/nat-apply.html",
+		"/Users/Anurag/Documents/rishi-natweb/static/css/style.css",
+		"/Users/Anurag/Documents/rishi-natweb/templates/apply.html",
+		"/Users/Anurag/Desktop/test.css",
+		"/Users/Anurag/Library/Application Support/Sublime Text 3/Packages/User/Minify.sublime-settings",
+		"/Users/Anurag/Library/Application Support/Sublime Text 3/Packages/Minify/Minify.sublime-settings",
+		"/Users/Anurag/Documents/rishi-natweb/requirements.txt",
+		"/Users/Anurag/Documents/rishi-natweb/templates/blog.html",
+		"/Users/Anurag/Documents/rishi-natweb/templates/error.html",
+		"/Users/Anurag/Desktop/scrape.py",
+		"/Users/Anurag/Documents/rishi-natweb_2/lib/gscrape.py",
+		"/Users/Anurag/Documents/rishi-natweb_2/app.py",
+		"/Users/Anurag/Documents/rishi-natweb_2/__init__.py",
+		"/Users/Anurag/Documents/rishi-natweb_2/.gitignore",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/apply.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/skeleton.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/education.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/projects.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/privacypolicy.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/methodology.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/locations.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/index.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/income.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/health.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/energy.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/water.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/donate.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/chapters.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/blog.html",
+		"/Users/Anurag/Documents/rishi-natweb_2/templates/about.html",
+		"/Users/Anurag/Documents/rishi-natweb/blog.html",
+		"/Users/Anurag/Documents/rishi-natweb copy/app.py",
+		"/Users/Anurag/Documents/anurags_personal_web/templates/index.html",
+		"/Users/Anurag/Documents/rishi-atlas/templates/skeleton.html",
+		"/Users/Anurag/Documents/rishi-atlas/static/css/style.css",
+		"/anaconda/envs/rishi-atlas/etc/conda/activate.d/env_vars.sh",
+		"/Users/Anurag/Documents/onerishi/templates/skeleton.html",
+		"/Users/Anurag/Documents/onerishi/templates/index.html",
+		"/Users/Anurag/Documents/onerishi/static/css/style.css",
+		"/anaconda/envs/rishi-atlas/bin/activate",
+		"/Users/Anurag/Desktop/slack/slack.sql",
+		"/Users/Anurag/Documents/projectnic/.htaccess",
+		"/Users/Anurag/Documents/projectnic/donate.html",
+		"/Users/Anurag/Documents/projectnic/about.html",
+		"/Users/Anurag/Documents/projectnic/chapters.html",
+		"/Users/Anurag/Documents/onerishi/app.py",
+		"/Users/Anurag/Documents/projectnic/css/style.css",
+		"/Users/Anurag/Documents/rishi-natweb/about.html",
+		"/Users/Anurag/Documents/projectnic/index2.html",
+		"/Users/Anurag/Documents/udacity/p5-fraud/final_project/poi_help.py",
+		"/Users/Anurag/Documents/projectnic/error.html",
+		"/Users/Anurag/Documents/projectnic/index.html",
+		"/Users/Anurag/Documents/udacity/p5-fraud/final_project/poi_id.py",
+		"/Users/Anurag/Documents/udacity/p5-fraud/final_project/tester.py",
+		"/Users/Anurag/Documents/rishi-atlas/templates/index.html",
+		"/Users/Anurag/Documents/projectnic/README.md",
+		"/Users/Anurag/Documents/rishi-atlas/templates/soccent.html",
+		"/Users/Anurag/Documents/rishi-atlas/static/js/table.js",
+		"/Users/Anurag/Documents/rishi-atlas/templates/alumni.html",
+		"/Users/Anurag/Documents/rishi-atlas/app.py",
+		"/Users/Anurag/Documents/rishi-atlas/app2.py",
+		"/Users/Anurag/Documents/rishi-atlas/.gitignore",
+		"/anaconda/envs/rishi-atlas/etc/conda/deactivate.d/env_vars.sh",
+		"/Users/Anurag/Documents/rishi-atlas/help",
+		"/Users/Anurag/Documents/rishi-atlas/requirements.txt",
+		"/Users/Anurag/Documents/onerishi/requirements.txt",
+		"/Users/Anurag/Documents/rishi-atlas/Procfile",
+		"/Users/Anurag/Documents/rishi-atlas/rishi-atlas.sublime-project",
+		"/Users/Anurag/Library/Application Support/Sublime Text 3/Packages/User/rishi-atlas.sublime-build",
+		"/Users/Anurag/Library/Application Support/Sublime Text 3/Packages/Virtualenv/Virtualenv.sublime-settings",
+		"/Users/Anurag/Library/Application Support/Sublime Text 3/Packages/User/Virtualenv.sublime-settings",
+		"/Users/Anurag/Documents/rishi-atlas/db_config.py",
+		"/Users/Anurag/Documents/rishi-atlas/__init__.py",
+		"/Users/Anurag/Documents/rishi-atlas/.env",
+		"/Users/Anurag/Documents/rishi-natweb/chapters.html",
+		"/Users/Anurag/Documents/soccent/app.py",
+		"/Users/Anurag/Documents/soccent/templates/index.html",
+		"/Users/Anurag/Documents/soccent/static/css/style.css",
+		"/Users/Anurag/Documents/soccent/templates/skeleton.html",
+		"/Users/Anurag/Documents/soccent/static/js/table.js",
+		"/Users/Anurag/Documents/soccent/static/css/bootstrap.min.css",
+		"/Users/Anurag/Documents/onerishi/templates/tickets.html",
+		"/Users/Anurag/Documents/soccent/db_config.py",
+		"/Users/Anurag/Documents/soccent/.gitignore",
+		"/Users/Anurag/Documents/rishi-natweb/apply.html",
+		"/Users/Anurag/Documents/rishi-dash/app.py",
+		"/Users/Anurag/Desktop/Screen Shot 2017-01-21 at 11.28.02 AM.png",
+		"/Users/Anurag/Documents/rishi-dash/db_config.py",
+		"/Users/Anurag/Documents/rishi-dash/templates/index.html",
+		"/Users/Anurag/Documents/rishi-dash/templates/test.html",
+		"/Users/Anurag/Documents/rishi-dash/__init__.py"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/Anurag/Documents/maamba/src/pages/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 194,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/Anurag/Documents/maamba/src/templates/skeleton.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1524,
+								1524
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 417.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3162,
+								3162
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1420.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/Anurag/Documents/maamba/src/templates/vendor_application.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1943,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								944,
+								944
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 97.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "maamba.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
