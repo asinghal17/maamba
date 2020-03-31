@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from operator import attrgetter
 
 from pages.models import Service
 
@@ -8,7 +9,7 @@ def home_view(request,*args, **kwargs):
 	return render(request,"vendor_landing.html",{})
 
 def vendor_apply_view(request,*args, **kwargs):
-	service_objects = Service.objects.all()
+	service_objects = sorted(Service.objects.all(),key=attrgetter('created_at'),)
 	context= {"services":service_objects }
 	return render(request,"vendor_apply.html",context)
 
