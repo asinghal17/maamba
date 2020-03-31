@@ -1,5 +1,4 @@
 from django.db import models
-from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
 
@@ -19,7 +18,6 @@ class Service(models.Model):
 # 	company_name = models.CharField(max_length=200)
 # 	first_name = models.CharField(max_length=30)
 # 	last_name = models.CharField(max_length=30)
-# 	phone_number= PhoneNumberField(blank=True)
 # 	primary_location = models.CharField(max_length=30)
 # 	website_url = models.CharField(max_length=200)
 # 	instagram = models.CharField(max_length=20)
