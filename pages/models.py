@@ -19,6 +19,7 @@ class Vendor(models.Model):
 	first_name = models.CharField(max_length=50)
 	last_name = models.CharField(max_length=50)
 	primary_location = models.CharField(max_length=30,null=True)
+	state = models.CharField(max_length=10,null=True,blank=True)
 	email = models.EmailField(null=True,blank=True)
 	website_url = models.CharField(max_length=200,null=True)
 	instagram = models.CharField(max_length=30,null=True)
