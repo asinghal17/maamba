@@ -27,11 +27,11 @@
           <br>
           <div class="card mb-4 shadow-sm">
             <div class="card-header">
-              <h6 class="my-0 font-weight-normal">{{ vendor.service_id }}</h6>
+              <h6 class="my-0 font-weight-normal text-uppercase">{{ vendor.service_id }}</h6>
             </div>
             <div class="card-body align-items-center">
               <h2 class="card-title pricing-card-title">{{ vendor.company_name }}</h2>
-              <!-- <p class="text-muted mb-0">Fatimah Photography</p> -->
+              <p><i class="fas fa-1x fa-map-marker-alt text-primary"></i>&nbsp;&nbsp;&nbsp;{{ vendor.primary_location }}&nbsp;&nbsp;&nbsp;</p>
               <hr class="divider my-4">
               <p class="my-4"><a href="https://www.instagram.com/{{ vendor.instagram }}"><i class="fab fa-2x fa-instagram text-primary"></i></a>&nbsp;&nbsp;&nbsp;<a href="{{ vendor.website_url }}"><i class="fas fa-2x fa-globe text-primary"></i></a></p>
             </div>
