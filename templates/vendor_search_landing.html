@@ -24,7 +24,7 @@
       {% if forloop.counter0|divisibleby:3 %} <div class="row"> {%  endif %}
         <div class="col-lg-4 text-center mt-4">
           <div class="vendor-category-listing">
-            <a href="{% url 'vandor-search-results' %}?vendor={{ service.id }}"><img class="img-thumbnail img-fluid" src="{{ service.cover_img }}" alt=""><div class="vendor-category-title text-white">{{ service.service_name }}</div> </a>
+            <a href="{% url 'vendor-search-results' %}?vendor={{ service.id }}"><img class="img-thumbnail img-fluid" src="{{ service.cover_img }}" alt=""><div class="vendor-category-title text-white">{{ service.service_name }}</div> </a>
           </div>
         </div>
       {%  if forloop.counter|divisibleby:3 or forloop.last %}</div><!-- row closing -->{%  endif %}

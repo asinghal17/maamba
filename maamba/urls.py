@@ -21,8 +21,8 @@ from pages.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home_view, name='home'),
-    path('vendor-search/',vendor_search_landing_view, name='vandor-search'),
-    path('search/',vendor_search_results_view, name='vandor-search-results'),
+    path('vendor-search/',vendor_search_landing_view, name='vendor-search'),
+    path('search/',vendor_search_results_view, name='vendor-search-results'),
     path('vendor-apply/',vendor_apply_view, name='vendor-apply'),
     # path("vendor/<int:pk>",vendor_view, name='vendor'),
 ]
