@@ -7,7 +7,7 @@ from pages.models import Service,Vendor
 
 # Create your views here.
 def home_view(request,*args, **kwargs):
-	return render(request,"vendor_landing.html",{})
+	return render(request,"home.html",{})
 
 def vendor_apply_view(request,*args, **kwargs):
 	service_objects = sorted(Service.objects.all(),key=attrgetter('created_at'),)
