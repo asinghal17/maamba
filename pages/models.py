@@ -14,17 +14,18 @@ class Service(models.Model):
 		return self.service_name
 
 
-# class Vendor(models.Model):
-# 	company_name = models.CharField(max_length=200)
-# 	first_name = models.CharField(max_length=30)
-# 	last_name = models.CharField(max_length=30)
-# 	primary_location = models.CharField(max_length=30)
-# 	website_url = models.CharField(max_length=200)
-# 	instagram = models.CharField(max_length=20)
-# 	description = models.TextField()
-# 	service_id = models.ForeignKey(Service, on_delete=models.SET_NULL,null=True)
-# 	created_at = models.DateTimeField(auto_now_add=True)
-# 	updated_at = models.DateTimeField(auto_now=True)
+class Vendor(models.Model):
+	company_name = models.CharField(max_length=200)
+	first_name = models.CharField(max_length=50)
+	last_name = models.CharField(max_length=50)
+	primary_location = models.CharField(max_length=30,null=True)
+	email = models.EmailField(null=True,blank=True)
+	website_url = models.CharField(max_length=200,null=True)
+	instagram = models.CharField(max_length=30,null=True)
+	description = models.TextField(null=True)
+	service_id = models.ForeignKey(Service, on_delete=models.SET_NULL,null=True)
+	created_at = models.DateTimeField(auto_now_add=True)
+	updated_at = models.DateTimeField(auto_now=True)
 
-# 	def __str__(self):
-# 		return self.company_name
+	def __str__(self):
+		return self.company_name
