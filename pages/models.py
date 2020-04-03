@@ -5,7 +5,7 @@ from django.db import models
 class Service(models.Model):
 	created_at = models.DateTimeField(auto_now_add=True)
 	updated_at = models.DateTimeField(auto_now=True)
-	service_name = models.CharField(max_length=30)
+	service_name = models.CharField(max_length=30,unique=True)
 	service_description = models.CharField(max_length=30)
 	cover_img = models.CharField(max_length=200)
 	application_link = models.CharField(max_length=200)
@@ -15,7 +15,7 @@ class Service(models.Model):
 
 
 class Vendor(models.Model):
-	company_name = models.CharField(max_length=200)
+	company_name = models.CharField(max_length=200,unique=True)
 	first_name = models.CharField(max_length=50,null=True,blank=True)
 	last_name = models.CharField(max_length=50,null=True,blank=True)
 	primary_location = models.CharField(max_length=30,null=True)
