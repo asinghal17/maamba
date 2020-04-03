@@ -1,5 +1,7 @@
 {% extends 'skeleton.html' %}
 
+{% block title %} {{ object.title }} | Dholi: Desi Wedding Planning Reimagined{% endblock %}
+
 {% block content %}
 
 <body id="page-top">
@@ -24,7 +26,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <h1 class="font-weight-bold">{% block title %} {{ object.title }} {% endblock title %}</h1>
+          <h1 class="font-weight-bold">{{ object.title }}</h1>
           <p><i class="fa fa-1x fas fa-calendar-day text-primary"></i>&nbsp;&nbsp;&nbsp;{{ object.created_at|date }}&nbsp;&nbsp;&nbsp;</p>
           <p>{{ object.content|linebreaksbr }}</p>
         </div>
