@@ -1,0 +1,45 @@
+{% extends 'skeleton.html' %}
+
+{% block content %}
+
+<body id="page-top">
+
+  <section class="page-section bg-vendor" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 mx-auto text-center">
+          <h2 class="text-white mt-0">Dholi Blog</h2>
+          <hr class="divider my-4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% load static %}
+
+  <!-- Blog List Section -->
+  <section class="page-section" id="search_results">
+    <div class="container">
+      {% for post in post_list %}
+        {% if forloop.counter0|divisibleby:3 %} <div class="row"> {%  endif %}
+        <div class="col-lg-4 text-left">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h6 class="my-0 font-weight-normal text-center">{{ post.category }}</h6>
+            </div>
+            <a href="{% url 'post-detail' post.slug  %}"><img src="{{ post.cover_img }}" class="card-img-top" alt="..."></a>
+            <div class="card-body align-items-center">
+              <a href="{% url 'post-detail' post.slug  %}"><h3 class="card-title pricing-card-title">{{ post.title }}</h3></a>
+              <!-- <p class="text-muted mb-0">Author: Dholi</p> -->
+              <p class="text-muted mb-0"><i class="fa fa-1x fas fa-calendar-day text-primary"></i>&nbsp;&nbsp;&nbsp;{{ post.created_at|date }}&nbsp;&nbsp;&nbsp;</p>
+            </div>
+          </div>
+        </div>
+        {%  if forloop.counter|divisibleby:3 or forloop.last %}</div><!-- row closing -->{%  endif %}
+      {%  endfor %}
+      </div>
+  </section>
+
+
+{% endblock %}

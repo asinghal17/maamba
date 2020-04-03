@@ -26,6 +26,7 @@ class Post(models.Model):
 	content = models.TextField()
 	author = models.ForeignKey(User, on_delete=models.SET_NULL,null=True)
 	status = models.IntegerField(choices=STATUS, default=0)
+	cover_img = models.CharField(max_length=200,null=True)
 	
 
 	def __str__(self):
