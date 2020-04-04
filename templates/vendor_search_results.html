@@ -25,9 +25,8 @@
 
     {%  for vendor in vendors  %}
       {% if forloop.counter0|divisibleby:3 %} <div class="row"> {%  endif %}
-        <div class="col-lg-4 text-center">
-          <br>
-          <div class="card mb-4 shadow-sm">
+        <div class="col-lg-4 text-center mb-5">
+          <div class="card shadow-sm h-100">
             <div class="card-header">
               <h6 class="my-0 font-weight-normal text-uppercase">{{ vendor.service_id }}</h6>
             </div>
