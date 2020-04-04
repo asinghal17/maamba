@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 
@@ -23,7 +24,7 @@ class Vendor(models.Model):
 	email = models.EmailField(null=True,blank=True)
 	website_url = models.CharField(max_length=200,null=True)
 	instagram = models.CharField(max_length=30,null=True,blank=True)
-	description = models.TextField(null=True)
+	description = RichTextField(null=True)
 	service_id = models.ForeignKey(Service, on_delete=models.SET_NULL,null=True,related_name='first_service')
 	second_service = models.ForeignKey(Service, on_delete=models.SET_NULL,null=True,related_name='second_service',blank=True)
 	created_at = models.DateTimeField(auto_now_add=True)
