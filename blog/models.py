@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.template.defaultfilters import slugify
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 
@@ -23,7 +24,8 @@ class Post(models.Model):
 	category = models.ForeignKey(Category, on_delete=models.SET_NULL,null=True)
 	created_at = models.DateTimeField(auto_now_add=True)
 	updated_at = models.DateTimeField(auto_now=True)
-	content = models.TextField()
+	# content = models.TextField()
+	content = RichTextField(blank=True, null=True)
 	author = models.ForeignKey(User, on_delete=models.SET_NULL,null=True)
 	status = models.IntegerField(choices=STATUS, default=0)
 	cover_img = models.CharField(max_length=200,null=True)
