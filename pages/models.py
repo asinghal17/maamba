@@ -24,7 +24,8 @@ class Vendor(models.Model):
 	website_url = models.CharField(max_length=200,null=True)
 	instagram = models.CharField(max_length=30,null=True,blank=True)
 	description = models.TextField(null=True)
-	service_id = models.ForeignKey(Service, on_delete=models.SET_NULL,null=True)
+	service_id = models.ForeignKey(Service, on_delete=models.SET_NULL,null=True,related_name='first_service')
+	second_service = models.ForeignKey(Service, on_delete=models.SET_NULL,null=True,related_name='second_service',blank=True)
 	created_at = models.DateTimeField(auto_now_add=True)
 	updated_at = models.DateTimeField(auto_now=True)
 
