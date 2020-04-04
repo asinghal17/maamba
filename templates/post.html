@@ -28,7 +28,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <h1 class="font-weight-bold">{{ object.title }}</h1>
           <p><i class="fa fa-1x fas fa-calendar-day text-primary"></i>&nbsp;&nbsp;&nbsp;{{ object.created_at|date }}&nbsp;&nbsp;&nbsp;</p>
-          <p>{{ object.content|linebreaksbr }}</p>
+          {{ object.content|safe }}
         </div>
       </div>
       <hr class="divider my-4">
