@@ -61,7 +61,10 @@
       <div class="row">
         <div class="col-lg-4 text-center">
           <img class="img-fluid rounded-circle" src="https://res.cloudinary.com/dixxe5spq/image/upload/v1585276279/sample.jpg" alt="">
-          <p class="my-4"><a href="https://www.instagram.com/{{ object.instagram }}"><i class="fab fa-2x fa-instagram text-primary"></i></a>&nbsp;&nbsp;&nbsp;
+          <p class="my-4">
+            {% if vendor.instagram %}
+              <a href="https://www.instagram.com/{{ object.instagram }}"><i class="fab fa-2x fa-instagram text-primary"></i></a>&nbsp;&nbsp;&nbsp;
+            {% endif %}  
           <a href="http://{{ object.website_url }}"><i class="fas fa-2x fa-globe text-primary"></i></a></p>
         </div>
         <div class="col-lg-8 text-justify">
