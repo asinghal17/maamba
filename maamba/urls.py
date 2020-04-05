@@ -16,15 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from pages.views import *
-from blog.views import *
+# from pages.views import *
+# from blog.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',home_view, name='home'),
-    path('vendor-search/',vendor_search_landing_view, name='vendor-search'),
-    path('search/',vendor_search_results_view, name='vendor-search-results'),
-    path('vendor-apply/',vendor_apply_view, name='vendor-apply'),
+    path('',include('pages.urls')),
     path('',include('blog.urls')),
-    # path("vendor/<int:pk>",vendor_view, name='vendor'),
 ]
