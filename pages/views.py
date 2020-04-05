@@ -11,9 +11,10 @@ def home_view(request,*args, **kwargs):
 	return render(request,"home.html",{})
 
 def vendor_apply_view(request,*args, **kwargs):
-	service_objects = sorted(Service.objects.all(),key=attrgetter('created_at'),)
-	context= {"services":service_objects }
-	return render(request,"vendor_apply.html",context)
+	# service_objects = sorted(Service.objects.all(),key=attrgetter('created_at'),)
+	# context= {"services":service_objects }
+	# return render(request,"vendor_apply.html",context)
+	return render(request,"apply.html",{})
 
 def vendor_search_landing_view(request,*args, **kwargs):
 	service_objects = sorted(Service.objects.all(),key=attrgetter('created_at'),)
