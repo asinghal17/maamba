@@ -17,7 +17,7 @@ class Service(models.Model):
 
 class Vendor(models.Model):
 	company_name = models.CharField(max_length=200,unique=True)
-	slug = models.SlugField(max_length=200, unique=True,null=True)
+	slug = models.SlugField(max_length=200, unique=True,null=True,blank=True)
 	first_name = models.CharField(max_length=50,null=True,blank=True)
 	last_name = models.CharField(max_length=50,null=True,blank=True)
 	primary_location = models.CharField(max_length=30,null=True)
