@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render,get_object_or_404
 from django.db.models import Q
 from operator import attrgetter
+from django.views.generic.detail import DetailView
 
 from pages.models import Service,Vendor
 
@@ -26,7 +27,6 @@ def vendor_search_results_view(request):
 	return render(request,"vendor_search_results.html",context)
 
 
-# def vendor_view(request,pk):
-# 	vendor_obj = Vendor.objects.get(pk=pk)
-# 	context= { "vendor":vendor_obj }
-# 	return render(request,"vendor_profile.html",context)
+class VendorDetailView(DetailView):
+	model=Vendor
+	template_name="profile.html"
