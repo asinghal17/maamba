@@ -23,8 +23,9 @@ def vendor_search_landing_view(request,*args, **kwargs):
 
 def vendor_search_results_view(request):
 	query = request.GET.get('vendor')
+	service= Service.objects.get(id=query)
 	results = Vendor.objects.filter(Q(service_id=query) | Q(second_service=query) ).order_by('company_name')
-	context= { "vendors":results }
+	context= { "vendors":results,"service":service }
 	return render(request,"vendor_search_results.html",context)
 
 
