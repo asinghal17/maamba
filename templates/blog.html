@@ -27,14 +27,15 @@
         {% if forloop.counter0|divisibleby:3 %} <div class="row"> {%  endif %}
         <div class="col-lg-4 text-left">
           <div class="card mb-4 shadow-sm">
-            <div class="card-header">
+<!--             <div class="card-header">
               <h6 class="my-0 font-weight-normal text-center">{{ post.category }}</h6>
-            </div>
+            </div> -->
             <a href="{% url 'post-detail' post.slug  %}"><img src="{{ post.cover_img }}" class="card-img-top" alt="..."></a>
             <div class="card-body align-items-center">
               <a href="{% url 'post-detail' post.slug  %}"><h3 class="card-title pricing-card-title">{{ post.title }}</h3></a>
               <!-- <p class="text-muted mb-0">Author: Dholi</p> -->
-              <p class="text-muted mb-0"><i class="fa fa-1x fas fa-calendar-day text-primary"></i>&nbsp;&nbsp;&nbsp;{{ post.created_at|date }}&nbsp;&nbsp;&nbsp;</p>
+              <p class="text-muted mb-0"><i class="fa fa-1x fas fa-calendar-day text-primary"></i>&nbsp;&nbsp;&nbsp;{{ post.created_at|date }}&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-1x fas fa-tag text-primary"></i>&nbsp;&nbsp;&nbsp;{{ post.category }}&nbsp;&nbsp;&nbsp;
+              </p>
             </div>
           </div>
         </div>
