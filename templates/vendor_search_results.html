@@ -22,13 +22,12 @@
   <!-- Search Results Section -->
   <section class="page-section" id="search_results">
     <div class="container">
-
     {%  for vendor in vendors  %}
       {% if forloop.counter0|divisibleby:3 %} <div class="row"> {%  endif %}
         <div class="col-lg-4 text-center mb-5">
           <div class="card shadow-sm h-100">
             <div class="card-header">
-              <h6 class="my-0 font-weight-normal text-uppercase">{{ vendor.service_id }}</h6>
+              <h6 class="my-0 font-weight-normal text-uppercase">{{ service.service_name }}</h6>
             </div>
             <div class="card-body align-items-center">
               <h2 class="card-title pricing-card-title">{{ vendor.company_name }}</h2>
@@ -37,8 +36,11 @@
               <p class="my-4">
                 {% if vendor.instagram %}
                   <a href="https://www.instagram.com/{{ vendor.instagram }}"><i class="fab fa-2x fa-instagram text-primary"></i></a>&nbsp;&nbsp;&nbsp;
-                {% endif %}                
-                <a href="{{ vendor.website_url }}"><i class="fas fa-2x fa-globe text-primary"></i></a></p>
+                {% endif %}
+                {% if vendor.website_url %}
+                  <a href="{{ vendor.website_url }}"><i class="fas fa-2x fa-globe text-primary"></i></a>
+                {% endif %}
+              </p>
             </div>
           </div>
         </div>
