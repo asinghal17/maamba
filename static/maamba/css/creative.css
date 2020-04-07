@@ -6222,7 +6222,7 @@ a.close.disabled {
 }
 
 .bg-vendor {
-  height: auto;
+  height: 30%;
   background-color: #dc3545 !important;
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/cover-img/mehendi.jpg");
   background-position: center;
