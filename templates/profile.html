@@ -26,13 +26,13 @@
       <!-- <hr class="divider my-4"> -->
       <div class="row">
         <div class="col-lg-3 text-center">
-          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="https://res.cloudinary.com/dixxe5spq/image/upload/v1586141928/dholi_placeholder/proposal_i3w1yu.png" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{% if object.cover_img_one %}" alt=""></a>
         </div>
         <div class="col-lg-3 text-center">
-          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="https://res.cloudinary.com/dixxe5spq/image/upload/v1586141928/dholi_placeholder/wedding_ant4l1.jpg" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{% if object.cover_img_two %}" alt=""></a>
         </div>
         <div class="col-lg-3 text-center">
-          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="https://res.cloudinary.com/dixxe5spq/image/upload/v1586141930/dholi_placeholder/reception_ygacc9.png" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{% if object.cover_img_three %}" alt=""></a>
         </div>
 <!--         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
@@ -60,15 +60,21 @@
     <div class="container" style="padding: 5rem 0">
       <div class="row">
         <div class="col-lg-3 text-center">
-          <img class="img-fluid rounded-circle" height="200" width="200" src="https://res.cloudinary.com/dixxe5spq/image/upload/v1586141930/dholi_placeholder/reception_ygacc9.png" alt="">
-          <p class="my-4"><a href="https://www.instagram.com/asinghal17"><i class="fab fa-2x fa-instagram text-primary"></i></a>&nbsp;&nbsp;&nbsp;
-          <a href="http://www.anuragsinghal.me"><i class="fas fa-2x fa-globe text-primary"></i></a></p>
+          <img class="img-fluid rounded-circle" height="200" width="200" src="{{ object.profile_pic }}" alt="">
+          <p class="my-4">
+            {% if object.instagram %}
+            <a href="https://www.instagram.com/{{ object.instagram }}"><i class="fab fa-2x fa-instagram text-primary"></i></a>&nbsp;&nbsp;&nbsp;
+            {% endif %}
+            {% if object.website_url %}
+            <a href="{{ object.website_url }}"><i class="fas fa-2x fa-globe text-primary"></i></a>
+            {% endif %}
+          </p>
         </div>
         <div class="col-lg-9 text-justify">
           <h2 class="mt-0">Dholi Photography</h2>
           <hr class="divider my-4" align="left">
-            <p><i class="fas fa-1x fa-map-marker-alt text-primary"></i>&nbsp;&nbsp;&nbsp;Los Angeles&nbsp;&nbsp;&nbsp;<i class="fa fa-1x fa-rocket text-primary"></i>&nbsp;&nbsp;&nbsp;Travel Friendly&nbsp;&nbsp;&nbsp;</p>
-          <p class="mb-4">Indian weddings are a canvas for emotions -- happy, cheerful, teary, anxious, and deeply in love. At John Doe Photography, we aim to capture these moments so you can remember them for a lifetime. Whether it’s getting beautifully designed patterns drawn on your hand during the Mehndi, or the new dance moves on display during the Baraat, or simply the jaw-dropping, heart-warming first dance, we’ve got you captured. </p>
+            <p><i class="fas fa-1x fa-map-marker-alt text-primary"></i>&nbsp;&nbsp;&nbsp;{{ object.primary_location }}&nbsp;&nbsp;&nbsp;<i class="fa fa-1x fa-rocket text-primary"></i>&nbsp;&nbsp;&nbsp;Travel Friendly&nbsp;&nbsp;&nbsp;</p>
+          <p class="mb-4">{{ object.description|safe }} </p>
         </div>
       </div>
     </div>
@@ -146,7 +152,7 @@
 
   <!-- Modal Featured Assets -->
   <div class="modal fade" id="featuredMediaSlideShow" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
       <div class="modal-content">
   <!--       <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Featured Assets</h5>
@@ -158,10 +164,10 @@
           <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100 img-fluid" src="img/portfolio/fullsize/1.jpg" alt="First slide">
+                <img class="d-block w-100 img-fluid" src="https://res.cloudinary.com/dixxe5spq/image/upload/v1586141928/dholi_placeholder/proposal_i3w1yu.png" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="img/portfolio/fullsize/2.jpg" alt="Second slide">
+                <img class="d-block w-100" src="https://res.cloudinary.com/dixxe5spq/image/upload/v1586141928/dholi_placeholder/wedding_ant4l1.jpg" alt="Second slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
