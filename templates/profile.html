@@ -22,8 +22,6 @@
   <!-- Services Section -->
   <section class="page-section" id="services">
     <div class="container">
-      <!-- <h2 class="text-center mt-0">PORTFOLIO PICTURE SECTION</h2> -->
-      <!-- <hr class="divider my-4"> -->
       <div class="row">
         <div class="col-lg-3 text-center">
           <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{{ object.cover_img_one }}" alt=""></a>
@@ -34,31 +32,21 @@
         <div class="col-lg-3 text-center">
           <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{{ object.cover_img_three }}" alt=""></a>
         </div>
-<!--         <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Made with Love</h3>
-            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
-          </div>
-        </div> -->
-      <div class="col-lg-3 text-center">
-        <br>
+      <div class="col-lg-3 text-center mt-4">
         <div class="card mb-4 shadow-sm">
-   <!--        <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise</h4>
-          </div> -->
           <div class="card-body align-items-center">
-            <!-- <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1> -->
             <p class="text-muted mb-0">Start a conversation to learn more!</p>
             <hr class="divider my-4">
-            <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#signup-login">Connect</button>
+            <a class="btn btn-lg btn-block btn-primary" href="mailto:{{ object.email }}">Connect</a>
+              <!-- Uncomment Below for Modal -->
+            <!-- <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#signup-login">Connect</button> -->
           </div>
         </div>
       </div>
       </div>
     </div>
-    <div class="container" style="padding: 5rem 0">
-      <div class="row">
+    <div class="container my-4">
+      <div class="row mt-5">
         <div class="col-lg-3 text-center">
           <img class="img-fluid rounded-circle" height="200" width="200" src="{{ object.profile_pic }}" alt="">
           <p class="my-4">
@@ -70,83 +58,59 @@
             {% endif %}
           </p>
         </div>
-        <div class="col-lg-9 text-justify">
-          <h2 class="mt-0">Dholi Photography</h2>
+        <div class="col-lg-9 text-justify mx-auto">
+          <h2 class="mt-0">{{ object.company_name }}</h2>
           <hr class="divider my-4" align="left">
-            <p><i class="fas fa-1x fa-map-marker-alt text-primary"></i>&nbsp;&nbsp;&nbsp;{{ object.primary_location }}&nbsp;&nbsp;&nbsp;<i class="fa fa-1x fa-rocket text-primary"></i>&nbsp;&nbsp;&nbsp;Travel Friendly&nbsp;&nbsp;&nbsp;</p>
-          <p class="mb-4">{{ object.description|safe }} </p>
+          <p><i class="fas fa-1x fa-map-marker-alt text-primary"></i>&nbsp;&nbsp;&nbsp;{{ object.primary_location }}&nbsp;&nbsp;&nbsp;<i class="fa fa-1x fa-rocket text-primary"></i>&nbsp;&nbsp;&nbsp;Travel Friendly&nbsp;&nbsp;&nbsp;</p>
+          <!-- <p class="mb-4">{{ object.description|safe }} </p> -->
+          {{ object.description|safe }}
         </div>
       </div>
     </div>
     <div class="bg-featured">
-    <div class="container" style="padding: 5rem 0">
-      <div class="row text-white">
-        <div class="col-lg-4 mb-2 text-center">
-          <div class="col mb-2">
-            <h5 class="mt-0">Events</h5>
+      <div class="container mx-auto" style="padding: 5rem 0">
+        <div class="row text-white">
+          <div class="col-lg-4 mb-2 text-center">
+            <div class="col mb-2">
+              <h4 class="mt-0">Events</h4>
+              <hr class="divider light my-4">
+      <!--           <div class="row text-center">
+                  <p><i class="fas fa-1x fa-ring text-white">
+                    </i>&nbsp;&nbsp;&nbsp;Proposal&nbsp;&nbsp;&nbsp;<i class="fas fa-1x fa-music text-white"></i>&nbsp;&nbsp;&nbsp;Engagement&nbsp;&nbsp;&nbsp;<i class="fas fa-1x fa-glass-cheers text-white"></i>&nbsp;&nbsp;&nbsp;Wedding&nbsp;&nbsp;&nbsp;
+                  </p>
+                </div> -->
+                <p>Proposal</p>
+                <p>Engagement Shoots</p>
+                <p>Wedding & Reception</p>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h4 class="mt-0">Services</h4>
             <hr class="divider light my-4">
-    <!--           <div class="row text-center">
-                <p><i class="fas fa-1x fa-ring text-white">
-                  </i>&nbsp;&nbsp;&nbsp;Proposal&nbsp;&nbsp;&nbsp;<i class="fas fa-1x fa-music text-white"></i>&nbsp;&nbsp;&nbsp;Engagement&nbsp;&nbsp;&nbsp;<i class="fas fa-1x fa-glass-cheers text-white"></i>&nbsp;&nbsp;&nbsp;Wedding&nbsp;&nbsp;&nbsp;
-                </p>
-              </div> -->
-              <p>Proposal</p>
-              <p>Engagement Shoots</p>
-              <p>Wedding & Reception</p>
+  <!--           <div class="row mt-0">
+              <div class="col mb-2"><p class="display-5">1 Week</p><p>First Look</p></div>
+              <div class="col mb-2 border-left"><p class="display-5">2 Weeks</p><p>Full Album</p></div>
+            </div> -->
+            <p>Image Editing</p>
+            <p>Prints / Wedding Album</p>
+            <p>Digital Files</p>
           </div>
-        </div>
-        <div class="col-lg-4 text-center">
-          <h5 class="mt-0">Delivery</h5>
-          <hr class="divider light my-4">
-          <div class="row mt-0">
-            <div class="col mb-2"><p class="display-5">1 Week</p><p>First Look</p></div>
-            <div class="col mb-2 border-left"><p class="display-5">2 Weeks</p><p>Full Album</p></div>
+          <div class="col-lg-4 text-center">
+            <h4 class="mt-0">Delivery Time</h4>
+            <hr class="divider light my-4">
+            <!-- <div class="col mb-2"><p class="mt-0">2020-03-02*</p></div> -->
+            <p>First Look Images: X Days</p>
+            <p>Wedding Album: X Days</p>
           </div>
-        </div>
-        <div class="col-lg-4 text-center">
-          <h5 class="mt-0">Availability</h5>
-          <hr class="divider light my-4">
-          <div class="col mb-2"><p class="mt-0">2020-03-02*</p></div>
         </div>
       </div>
     </div>
-  </div>
   </section>
 
   <section id="services">
     <div class="container">
       <h2 class="text-center mt-0">Reviews</h2>
       <hr class="divider my-4">
-<!--       <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Sturdy Themes</h3>
-            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Up to Date</h3>
-            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Ready to Publish</h3>
-            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Made with Love</h3>
-            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
-          </div>
-        </div>
-      </div> -->
     </div>
   </section>
 
