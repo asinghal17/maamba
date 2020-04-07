@@ -18,6 +18,7 @@ class Service(models.Model):
 class Vendor(models.Model):
 	company_name = models.CharField(max_length=200,unique=True)
 	slug = models.SlugField(max_length=200, unique=True,null=True,blank=True)
+	profile_pic = models.CharField(max_length=200,null=True,blank=True)
 	first_name = models.CharField(max_length=50,null=True,blank=True)
 	last_name = models.CharField(max_length=50,null=True,blank=True)
 	primary_location = models.CharField(max_length=30,null=True)
@@ -28,6 +29,9 @@ class Vendor(models.Model):
 	description = RichTextField(null=True)
 	service_id = models.ForeignKey(Service, on_delete=models.SET_NULL,null=True,related_name='first_service')
 	second_service = models.ForeignKey(Service, on_delete=models.SET_NULL,null=True,related_name='second_service',blank=True)
+	cover_img_one = models.CharField(max_length=200,null=True,blank=True)
+	cover_img_two = models.CharField(max_length=200,null=True,blank=True)
+	cover_img_three = models.CharField(max_length=200,null=True,blank=True)
 	created_at = models.DateTimeField(auto_now_add=True)
 	updated_at = models.DateTimeField(auto_now=True)
 
