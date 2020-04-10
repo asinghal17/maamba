@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'pages',
     'blog',
     'ckeditor',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [
