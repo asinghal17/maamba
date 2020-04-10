@@ -72,44 +72,78 @@
         </div>
       </div>
     </div>
+    {% if object.second_service %}
+    <!-- DETAIL BANNER BELOW -->
     <div class="bg-featured">
       <div class="container mx-auto" style="padding: 5rem">
         <div class="row text-white">
-          <div class="col-lg-4 mb-2 text-center">
-            <div class="col mb-2">
-              <h4 class="mt-0">Events</h4>
-              <hr class="divider light my-4">
-      <!--           <div class="row text-center">
-                  <p><i class="fas fa-1x fa-ring text-white">
-                    </i>&nbsp;&nbsp;&nbsp;Proposal&nbsp;&nbsp;&nbsp;<i class="fas fa-1x fa-music text-white"></i>&nbsp;&nbsp;&nbsp;Engagement&nbsp;&nbsp;&nbsp;<i class="fas fa-1x fa-glass-cheers text-white"></i>&nbsp;&nbsp;&nbsp;Wedding&nbsp;&nbsp;&nbsp;
-                  </p>
-                </div> -->
-                <!-- <p>Proposal</p> -->
-                <p>Engagement Shoots</p>
-                <p>Wedding & Reception</p>
-            </div>
+          <div class="col-lg-6 mb-2 text-center">
+            <i class="fas fa-5x fa-camera"></i>
+              <div class="row my-4">  
+                <div class="col-sm-6">
+                  <h5 class="mt-0">Services</h5>
+                  <hr class="divider light">
+                    <p>Image Editing</p>
+                    <p>Prints / Wedding Album</p>
+                    <p>Digital Files</p>
+                </div> 
+                <div class="col-sm-6">
+                  <h5 class="mt-0">Delivery Time</h5>
+                  <hr class="divider light">
+                    <p>First Look Images: ~1 weeks</p>
+                    <p>Wedding Album: ~4 weeks</p>
+                </div> 
+              </div>
           </div>
-          <div class="col-lg-4 text-center">
-            <h4 class="mt-0">Services</h4>
-            <hr class="divider light my-4">
-  <!--           <div class="row mt-0">
-              <div class="col mb-2"><p class="display-5">1 Week</p><p>First Look</p></div>
-              <div class="col mb-2 border-left"><p class="display-5">2 Weeks</p><p>Full Album</p></div>
-            </div> -->
-            <p>Image Editing</p>
-            <p>Prints / Wedding Album</p>
-            <p>Digital Files</p>
-          </div>
-          <div class="col-lg-4 text-center">
-            <h4 class="mt-0">Delivery Time</h4>
-            <hr class="divider light my-4">
-            <!-- <div class="col mb-2"><p class="mt-0">2020-03-02*</p></div> -->
-            <p>First Look Images: X Days</p>
-            <p>Wedding Album: X Days</p>
-          </div>
+          <div class="col-lg-6 mb-2 text-center">
+            <i class="fas fa-5x fa-video"></i>
+              <div class="row my-4">  
+                <div class="col-sm-6">
+                  <h5 class="mt-0">Services</h5>
+                  <hr class="divider light">
+                    <p>Highlight Reel</p>
+                    <p>Drone Footage</p>
+                    <p>Same Day Edit</p>
+                    <p>Raw Footage</p>
+                    <p>Instagram Teaser</p>
+                </div> 
+                <div class="col-sm-6">
+                  <h5 class="mt-0">Delivery Time</h5>
+                  <hr class="divider light">
+                    <p>Highlight Reel: ~4 weeks</p>
+                </div> 
+              </div>
+          </div>          
         </div>
       </div>
-    </div>
+    </div>      
+    {% else %}
+    <!-- DETAIL BANNER BELOW -->
+    <div class="bg-featured">
+      <div class="container mx-auto" style="padding: 5rem">
+        <div class="row text-white">
+          <div class="col-lg-12 mb-2 text-center">
+            <i class="fas fa-4x fa-camera"></i>
+              <div class="row my-4">  
+                <div class="col-lg-6">
+                  <h5 class="mt-0">Services</h5>
+                  <hr class="divider light">
+                    <p>Image Editing</p>
+                    <p>Prints / Wedding Album</p>
+                    <p>Digital Files</p>
+                </div> 
+                <div class="col-lg-6">
+                  <h5 class="mt-0">Delivery Time</h5>
+                  <hr class="divider light">
+                    <p>First Look Images: ~1 weeks</p>
+                    <p>Wedding Album: ~4 weeks</p>
+                </div> 
+              </div>
+          </div>         
+        </div>
+      </div>
+    </div>    
+    {% endif %}
   </section>
 
 <!--   <section id="reviews">
