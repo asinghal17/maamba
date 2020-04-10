@@ -32,6 +32,7 @@ class Vendor(models.Model):
 	cover_img_one = models.CharField(max_length=200,null=True,blank=True)
 	cover_img_two = models.CharField(max_length=200,null=True,blank=True)
 	cover_img_three = models.CharField(max_length=200,null=True,blank=True)
+	featured_video = models.CharField(max_length=200,null=True,blank=True)
 	created_at = models.DateTimeField(auto_now_add=True)
 	updated_at = models.DateTimeField(auto_now=True)
 

@@ -4,7 +4,7 @@
 
 {% block content %}
 
-  <section class="page-section bg-vendor" id="about">
+  <section class="page-section bg-vendor" id="vendor-company-name">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10 mx-auto text-center">
@@ -18,11 +18,18 @@
 {% load static %}
 
   <!-- Services Section -->
-  <section class="page-section" id="services">
+  <section class="page-section" id="vendor-profile-details">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 text-center">
+        {% if object.featured_video %}
+          <div class="video-wrap">
+            <a href="#headerPopup" id="headerVideoLink" target="_blank"><div class="play-btn"></div></a>
+            <img class="img-thumbnail img-fluid" height="300" width="300" src="{{ object.cover_img_one }}" alt="">
+          </div>
+        {% else %}
           <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{{ object.cover_img_one }}" alt=""></a>
+        {% endif %}      
         </div>
         <div class="col-lg-3 text-center">
           <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{{ object.cover_img_two }}" alt=""></a>
@@ -105,7 +112,7 @@
     </div>
   </section>
 
-<!--   <section id="services">
+<!--   <section id="reviews">
     <div class="container">
       <h2 class="text-center mt-0">Reviews</h2>
       <hr class="divider my-4">
@@ -171,5 +178,10 @@
   </div>
 </div>
 
+  {% if object.featured_video %}
+  <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+    <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/{{ object.featured_video }}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+  {% endif %}
 
 {% endblock %}
