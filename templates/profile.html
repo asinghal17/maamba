@@ -1,6 +1,6 @@
 {% extends 'skeleton.html' %}
 
-{% block title %} {{ object.company_name }} | Dholi: Desi Wedding Planning Reimagined{% endblock %}
+{% block title %} {{ vendor.company_name }} | Dholi: Desi Wedding Planning Reimagined{% endblock %}
 
 {% block content %}
 
@@ -8,7 +8,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10 mx-auto text-center">
-          <h2 class="text-white text-uppercase">{{ object.company_name }}</h2>
+          <h2 class="text-white text-uppercase">{{ vendor.company_name }}</h2>
           <hr class="divider">
         </div>
       </div>
@@ -22,27 +22,27 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3 text-center">
-        {% if object.featured_video %}
+        {% if vendor.featured_video %}
           <div class="video-wrap">
             <a href="#headerPopup" id="headerVideoLink" target="_blank"><div class="play-btn"></div></a>
-            <img class="img-thumbnail img-fluid" height="300" width="300" src="{{ object.cover_img_one }}" alt="">
+            <img class="img-thumbnail img-fluid" height="300" width="300" src="{{ vendor.cover_img_one }}" alt="">
           </div>
         {% else %}
-          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{{ object.cover_img_one }}" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{{ vendor.cover_img_one }}" alt=""></a>
         {% endif %}      
         </div>
         <div class="col-lg-3 text-center">
-          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{{ object.cover_img_two }}" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{{ vendor.cover_img_two }}" alt=""></a>
         </div>
         <div class="col-lg-3 text-center">
-          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{{ object.cover_img_three }}" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#featuredMediaSlideShow"><img class="img-thumbnail img-fluid" height="300" width="300" src="{{ vendor.cover_img_three }}" alt=""></a>
         </div>
       <div class="col-lg-3 text-center mt-4">
         <div class="card mb-4 shadow-sm">
           <div class="card-body align-items-center">
             <p class="text-muted mb-0">Start a conversation to learn more!</p>
             <hr class="divider my-4">
-            <a class="btn btn-lg btn-block btn-primary" href="mailto:{{ object.email }}">Connect</a>
+            <a class="btn btn-lg btn-block btn-primary" href="mailto:{{ vendor.email }}">Connect</a>
               <!-- Uncomment Below for Modal -->
             <!-- <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#signup-login">Connect</button> -->
           </div>
@@ -53,26 +53,26 @@
     <div class="container my-4">
       <div class="row mt-5">
         <div class="col-lg-3 text-center">
-          <img class="img-fluid rounded-circle" height="200" width="200" src="{{ object.profile_pic }}" alt="">
+          <img class="img-fluid rounded-circle" height="200" width="200" src="{{ vendor.profile_pic }}" alt="">
           <p class="my-4">
-            {% if object.instagram %}
-            <a href="https://www.instagram.com/{{ object.instagram }}"><i class="fab fa-2x fa-instagram text-primary"></i></a>&nbsp;&nbsp;&nbsp;
+            {% if vendor.instagram %}
+            <a href="https://www.instagram.com/{{ vendor.instagram }}"><i class="fab fa-2x fa-instagram text-primary"></i></a>&nbsp;&nbsp;&nbsp;
             {% endif %}
-            {% if object.website_url %}
-            <a href="{{ object.website_url }}"><i class="fas fa-2x fa-globe text-primary"></i></a>
+            {% if vendor.website_url %}
+            <a href="{{ vendor.website_url }}"><i class="fas fa-2x fa-globe text-primary"></i></a>
             {% endif %}
           </p>
         </div>
         <div class="col-lg-9 text-justify mx-auto">
-          <h2 class="mt-0">{{ object.company_name }}</h2>
+          <h2 class="mt-0">{{ vendor.company_name }}</h2>
           <hr class="divider my-4" align="left">
-          <p><i class="fas fa-1x fa-map-marker-alt text-primary"></i>&nbsp;&nbsp;&nbsp;{{ object.primary_location }}&nbsp;&nbsp;&nbsp;<i class="fa fa-1x fa-rocket text-primary"></i>&nbsp;&nbsp;&nbsp;Travel Friendly&nbsp;&nbsp;&nbsp;</p>
-          <!-- <p class="mb-4">{{ object.description|safe }} </p> -->
-          {{ object.description|safe }}
+          <p><i class="fas fa-1x fa-map-marker-alt text-primary"></i>&nbsp;&nbsp;&nbsp;{{ vendor.primary_location }}&nbsp;&nbsp;&nbsp;<i class="fa fa-1x fa-rocket text-primary"></i>&nbsp;&nbsp;&nbsp;Travel Friendly&nbsp;&nbsp;&nbsp;</p>
+          <!-- <p class="mb-4">{{ vendor.description|safe }} </p> -->
+          {{ vendor.description|safe }}
         </div>
       </div>
     </div>
-    {% if object.second_service %}
+    {% if vendor.second_service %}
     <!-- DETAIL BANNER BELOW -->
     <div class="bg-featured">
       <div class="container mx-auto" style="padding: 5rem">
@@ -83,15 +83,16 @@
                 <div class="col-sm-6">
                   <h5 class="mt-0">Services</h5>
                   <hr class="divider light">
-                    <p>Image Editing</p>
-                    <p>Prints / Wedding Album</p>
-                    <p>Digital Files</p>
+                  {% for detail in first_service_details %}
+                    <p>{{ detail }}</p>
+                  {% endfor %}
                 </div> 
                 <div class="col-sm-6">
                   <h5 class="mt-0">Delivery Time</h5>
                   <hr class="divider light">
-                    <p>First Look Images: ~1 weeks</p>
-                    <p>Wedding Album: ~4 weeks</p>
+                  {%  for profile in vendor.first_delivery_profile  %}
+                    <p>{{ profile.delivery_type }}: {{ profile.delivery_time }}</p>
+                  {% endfor %}
                 </div> 
               </div>
           </div>
@@ -101,16 +102,16 @@
                 <div class="col-sm-6">
                   <h5 class="mt-0">Services</h5>
                   <hr class="divider light">
-                    <p>Highlight Reel</p>
-                    <p>Drone Footage</p>
-                    <p>Same Day Edit</p>
-                    <p>Raw Footage</p>
-                    <p>Instagram Teaser</p>
+                  {% for detail in second_service_details %}
+                    <p>{{ detail }}</p>
+                  {% endfor %}
                 </div> 
                 <div class="col-sm-6">
                   <h5 class="mt-0">Delivery Time</h5>
                   <hr class="divider light">
-                    <p>Highlight Reel: ~4 weeks</p>
+                  {%  for profile in vendor.second_delivery_profile  %}
+                    <p>{{ profile.delivery_type }}: {{ profile.delivery_time }}</p>
+                  {% endfor %}
                 </div> 
               </div>
           </div>          
@@ -128,15 +129,16 @@
                 <div class="col-lg-6">
                   <h5 class="mt-0">Services</h5>
                   <hr class="divider light">
-                    <p>Image Editing</p>
-                    <p>Prints / Wedding Album</p>
-                    <p>Digital Files</p>
+                  {% for detail in first_service_details %}
+                    <p>{{ detail }}</p>
+                  {% endfor %}
                 </div> 
                 <div class="col-lg-6">
                   <h5 class="mt-0">Delivery Time</h5>
                   <hr class="divider light">
-                    <p>First Look Images: ~1 weeks</p>
-                    <p>Wedding Album: ~4 weeks</p>
+                  {%  for profile in vendor.first_delivery_profile  %}
+                    <p>{{ profile.delivery_type }}: {{ profile.delivery_time }}</p>
+                  {% endfor %}
                 </div> 
               </div>
           </div>         
@@ -167,13 +169,13 @@
           <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100 img-fluid" src="{{ object.cover_img_one }}" alt="First slide">
+                <img class="d-block w-100 img-fluid" src="{{ vendor.cover_img_one }}" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="{{ object.cover_img_two }}" alt="Second slide">
+                <img class="d-block w-100" src="{{ vendor.cover_img_two }}" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="{{ object.cover_img_three }}" alt="Second slide">
+                <img class="d-block w-100" src="{{ vendor.cover_img_three }}" alt="Second slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -212,9 +214,9 @@
   </div>
 </div>
 
-  {% if object.featured_video %}
+  {% if vendor.featured_video %}
   <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
-    <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/{{ object.featured_video }}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/{{ vendor.featured_video }}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
   </div>
   {% endif %}
 
