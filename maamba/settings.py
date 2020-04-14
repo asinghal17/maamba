@@ -134,6 +134,11 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
+#YELP API SETTINGS BELOW
+YELP_API_KEY=os.environ.get('YELP_API_KEY')
+YELP_API_HOST = 'https://api.yelp.com'
+YELP_BUSINESS_PATH = '/v3/businesses/'
+
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
