@@ -158,7 +158,7 @@
         </div>
         <div class="col-lg-6 text-center">
           <h2 class="text-center mt-0">Reviews</h2>
-          <div class="small text-center text-muted">Powered by <a href="https://www.yelp.com/">Yelp</a></div>
+          <div class="small text-center text-muted">Powered by <a href="https://www.yelp.com/" target="_blank">Yelp</a></div>
           <hr class="divider my-4">
         </div>
       </div>
@@ -174,10 +174,10 @@
                 <div class="row text-muted">
                   <div class="col-sm-3 text-center">
                     <p><img class="rounded-circle" height="50" width="50" src="{{ review.user.image_url }}" alt=""></p>
-                    <p><a href="{{ review.user.profile_url }}">{{ review.user.name }}</a><br> {{ review.time_created|date }}</p>
+                    <p><a href="{{ review.user.profile_url }}" target="_blank">{{ review.user.name }}</a><br> {{ review.time_created|date }}</p>
                   </div>
                   <div class="col-sm-9">
-                  <p><img class="" src="https://raw.githubusercontent.com/asinghal17/maamba/anoo-dev/static/maamba/img/yelp_stars/web_and_ios/small/small_{{ review.rating }}.png" alt=""></p>{{ review.text|safe }} <a href="{{ review.url }}">Full Review</a></p></div>
+                  <p><img class="" src="https://raw.githubusercontent.com/asinghal17/maamba/anoo-dev/static/maamba/img/yelp_stars/web_and_ios/small/small_{{ review.rating }}.png" alt=""></p>{{ review.text|safe }} <a href="{{ review.url }}" target="_blank">Full Review</a></p></div>
                 </div>
               </div>
             </div>
